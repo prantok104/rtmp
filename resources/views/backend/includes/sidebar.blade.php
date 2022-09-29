@@ -9,7 +9,7 @@
 
     <span class="d-block mt-3 mb-3 bsuite-menu-title">Main</span>
     <ul class="sidebar-menu">
-        <li><a href=""><i class="fal fa-home"></i> <span>Home</span></a></li>
+        <li><a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><i class="fal fa-home"></i> <span>Home</span></a></li>
         <li>
             <a href=""><i class="fal fa-calendar"></i> <span>Events</span></a>
         </li>
