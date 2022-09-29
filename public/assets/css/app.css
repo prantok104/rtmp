@@ -325,7 +325,7 @@ main.bsuite-main-content {
 }
 .dashboard-content-left {
     width: 35%;
-    min-height: 75vh;
+    min-height: 84vh;
     color: #fff;
 }
 
@@ -349,20 +349,34 @@ main.bsuite-main-content {
 }
 
 .dashboard-content-left strong>span {
-    font-size: 21px;
+    font-size: 27px;
     font-weight: 600;
 }
 .dashboard-content-left p>a {
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 13px;
     background: #0014ff;
     border-radius: 3px;
     color: #fff;
     text-transform: uppercase;
+}
+.dashboard-content-left p>a:hover{
+    background: #0717c5;
 }
 
 .dashboard-content-left p {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+.dashboard-right-content {
+    flex: 1;
+    border-left: 1px solid #013352;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+}
+.no-more-data-found span{
+    font-size: 17px;
 }

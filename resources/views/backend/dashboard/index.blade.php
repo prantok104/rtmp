@@ -12,7 +12,9 @@
         </p>
     </div>
     <div class="dashboard-right-content">
-
+        <div class="no-more-data-found">
+            <span>No More Events or Schedules Found :( :(</span>
+        </div>
     </div>
 </div>
 @endsection
