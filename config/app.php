@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Brian2694\Toastr\ToastrServiceProvider::class,
         /*
          * Application Service Providers...
          */

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace'=> 'Backend', 'prefix'=>'admin', 'as'=>'admin.'], function(){
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
+
+
 
 Auth::routes();
 

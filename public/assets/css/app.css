@@ -15,7 +15,7 @@ html{
 }
 
 #wrapper {
-    background: #f6f6f6;
+    background: #072336;
     width: 100%;
     min-height: 100vh;
 }
@@ -42,6 +42,8 @@ a:active,
 a:visited,
 a:focus {
     text-decoration: none;
+}
+a:hover{
     transition: all 0.4s ease-in-out;
 }
 
@@ -50,7 +52,7 @@ a:focus {
 }
 
 .border-b-1 {
-    border-bottom: 1px solid #f1e9e9
+    border-bottom: 1px solid #013352;
 }
 
 .border-t-1 {
@@ -183,660 +185,106 @@ form select.form-control {
 /*Sidebar css*/
 
 .bsuite-sidebar-area-start {
-    width: 240px;
+    width: 76px;
     background: #031c2d;
     position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
     padding: 10px;
-    transition: all 0.5s ease-in-out;
 }
-
-.bsuite-logo-area a>img {
-    width: 32px;
+.bsuite-logo-area a {
+    width: 50px;
+    background: #062E48;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
 }
 
 .bsuite-logo-area a {
     color: #fff;
-    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
-}
-
-.bsuite-search-area form input {
-    padding: 6px 12px;
-    border: 1px solid #103650;
-    background: #001421;
-    width: 100%;
-    color: #ddd;
-}
-
-.bsuite-search-area form input:focus {
-    border-color: #798b9b;
-}
-
-.bsuite-search-area form {
-    position: relative;
-}
-
-.bsuite-search-area form button {
-    position: absolute;
-    right: 0;
-    padding: 4px 10px;
-    color: #667681;
-    background: transparent;
-    outline: none;
-    border: 0;
-}
-
-.bsuite-search-area form input::placeholder {
-    font-size: 12px;
-    padding-left: 10px;
 }
 
 .bsuite-menu-title {
     color: #a9c1d8;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 ul.sidebar-menu {
     max-height: 80vh;
-    overflow-y: auto;
-}
-
-ul.sidebar-menu::-webkit-scrollbar,
-.bsuite-setting-content-area::-webkit-scrollbar {
-    width: 1px;
-}
-
-ul.sidebar-menu::-webkit-scrollbar-track {
-    background: #031C2D;
-}
-
-ul.sidebar-menu::-webkit-scrollbar-thumb {
-    background: #031C2D;
-    border-radius: 0px;
-}
-
-ul.sidebar-menu::-webkit-scrollbar-thumb:hover {
-    background: #031C2D;
-}
-
-.bsuite-setting-content-area::-webkit-scrollbar-track,
-.bsuite-setting-content-area::-webkit-scrollbar-thumb,
-.bsuite-setting-content-area::-webkit-scrollbar-thumb:hover {
-    background: #fff
-}
-
-ul.sidebar-menu li {
-    position: relative;
     display: flex;
     flex-flow: column;
-    margin-bottom: 4px;
-}
-
-ul.sidebar-menu li i {
-    width: 20px;
+    gap: 9px;
+    align-items: center;
 }
 
 ul.sidebar-menu li a {
-    padding: 10px 6px;
-    display: block;
-    color: #74899d;
-    font-size: 12px;
-    flex: 1;
-    background: transparent;
-    border-radius: 4px;
-    border: 1px solid transparent;
-}
-
-ul.sidebar-menu li.active a,
-ul.sidebar-menu li a:hover {
-    color: #d8ecff;
-    background: #001421;
-    border-radius: 4px;
-    border: 1px solid #4e6487;
-}
-
-ul.sidebar-menu li a i {
-    font-size: 14px;
-}
-
-ul.sidebar-menu li.active a i {
-    color: #5271FF
-}
-
-ul.sidebar-menu li ul.dropdown-menu-content {
-    position: static;
-    background: #001421;
-    width: 100%;
-    padding: 15px 10px 15px 30px;
-    display: none;
-}
-
-ul.sidebar-menu li.active ul.dropdown-menu-content {
-    display: block
-}
-
-ul.sidebar-menu li ul.dropdown-menu-content li a {
-    padding: 7px 0;
-    text-transform: capitalize;
-    border: 0;
-    color: #74899d;
-}
-
-ul.sidebar-menu li ul.dropdown-menu-content li a:hover {
-    border: none;
-    background: transparent;
-}
-
-ul.sidebar-menu li.active ul.dropdown-menu-content li.active a,
-ul.sidebar-menu li ul.dropdown-menu-content li a:hover {
-    color: #d8ecff
-}
-
-ul.sidebar-menu li ul.dropdown-menu-content li a>i {
-    font-size: 12px;
-}
-
-span.error-message {
-    display: block;
-    margin-top: 5px;
-    font-size: 11px;
-}
-
-
-/* Preloader css */
-
-.bsuite-preload-area-start {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999;
-}
-
-.bsuite-preload-area-start:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    opacity: 0.95;
-    z-index: -1;
-}
-
-
-/* Setup css */
-
-.welcome-screen-area-start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(270deg, #3a57d5, #2147af, #0d74b9);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 24s ease infinite;
-    -moz-animation: AnimationName 24s ease infinite;
-    animation: AnimationName 24s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes AnimationName {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes AnimationName {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-.welcome-screen-content h2 {
-    font-size: 100px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-.welcome-screen-content p {
-    font-size: 30px;
-    color: #fff;
-    margin: 15px 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.welcome-screen-content {
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-}
-
-.welcome-screen-content a {
-    padding: 10px 45px;
-    display: inline-block;
-    background: transparent;
-    border: 3px solid #fff;
-    color: #ffff;
-    border-radius: 74px;
-    transition: all 0.2s ease-in-out;
-}
-
-.welcome-screen-content a:hover {
-    background: #fff;
-    color: #5271FF;
-    border-color: #bdc4e3;
-}
-
-p.progress-bar {
-    width: 350px;
-    margin: 30px auto;
-    background: #2A91CC;
-    height: 4px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-span.bar-inside {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-    height: 4px;
-    background: #fff;
-    width: 10%;
-    -webkit-animation: barWidth 10s ease infinite;
-    -moz-animation: barWidth 10s ease infinite;
-    animation: barWidth 10s ease infinite;
-}
-
-@-webkit-keyframes barWidth {
-    0% {
-        width: 0%
-    }
-
-    100% {
-        width: 100%
-    }
-}
-
-@-moz-keyframes barWidth {
-    0% {
-        width: 0%
-    }
-
-    100% {
-        width: 100%
-    }
-}
-
-@keyframes barWidth {
-    0% {
-        width: 0%
-    }
-
-    100% {
-        width: 100%
-    }
-}
-
-.company-setup-form h4 {
-    color: #fff;
-    font-size: 20px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-}
-
-.company-setup-form form input.form-control,
-.company-setup-form form select.form-control,
-.select2-container .select2-selection--single,
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 36px;
-}
-
-.select2-container--default .select2-selection--single {
-    border: none;
-    border-radius: 2px;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 36px;
-}
-
-.company-setup-form form input.form-control {
-    background: transparent;
-    color: #fff;
-}
-
-.company-setup-form form input::placeholder {
-    color: #fff;
-    font-size: 12px;
-}
-
-.company-setup-form form select.form-control {
-    background: transparent;
-    color: #000;
-}
-
-textarea {
-    font-size: 12px;
-}
-
-.animate-label {
-    height: 36px;
-    position: relative;
-}
-
-.animate-label label {
-    position: absolute;
-    transform: translateY(-52%);
-    top: 50%;
-    left: 16px;
-    font-weight: 300;
-    font-size: 12px;
-    color: #fff;
-    transition: 0.4s ease;
-    line-height: 1;
-    padding: 0px 3px;
-    pointer-events: none;
-}
-
-.form-group.animate-label label {
-    transform: translateY(-74%);
-    color: #6c6363;
-    padding: 0 5px;
-}
-
-input:focus~label,
-input:not(:placeholder-shown).form-control:not(:focus)~label,
-textarea:focus~label, select:focus~label,
-textarea:not(:placeholder-shown).form-control:not(:focus)~label,
-select:not(:placeholder-shown).form-control:not(:focus)~label {
-    top: 0;
-    left: 10px
-}
-
-.form-group input:focus~label,
-.form-group input:not(:focus)~label,
-.form-group textarea:focus~label,
-.form-group textarea:not(:focus)~label {
-    background: #fff !important;
-}
-
-.form-group.white-label input:focus~label,
-.form-group.white-label input:not(:focus)~label,
-.form-group.white-label textarea:focus~label,
-.form-group.white-label textarea:not(:focus)~label {
-    background: #1661B5 !important;
-}
-
-.company-setup-form form small {
-    font-size: 11px;
-}
-
-.company-setup-form {
-    width: 307px;
-}
-
-.company-setup-form .select2-container--default .select2-selection--single {
-    background: transparent;
-}
-
-.company-setup-form .select2-container {
-    border: 1px solid #ced4da;
-}
-
-.company-setup-form .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #fff;
-    font-size: 12px;
-}
-
-.company-setup-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #ddd transparent transparent transparent;
-}
-
-.company-setup-form button.setup-btn {
-    margin-top: 15px;
-    border: 2px solid #ddd;
-    padding: 7px 27px;
-    border-radius: 4px;
-    font-size: 14px;
-    background: #fff;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-}
-
-.company-setup-form button.setup-btn:hover {
-    background: #2462C4;
-    border-color: #2462C4;
-    color: #fff;
-}
-
-.congratulation-content-area {
-    width: 550px;
-    height: 450px;
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-}
-
-.congratulation-header {
-    width: 100%;
-    height: 40%;
+    width: 45px;
+    height: 45px;
     position: relative;
     z-index: 1;
-}
-
-.congratulation-body {
-    width: 100%;
-    height: 60%;
-}
-
-.congratulation-header:after {
-    position: absolute;
-    left: -2%;
-    top: -57%;
-    right: 0;
-    bottom: 0;
-    background: #2B9EF1;
-    height: 160%;
-    width: 104%;
-    content: '';
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #0f3954;
     border-radius: 50%;
-    z-index: -1;
 }
 
-.congratulation-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+ul.sidebar-menu li a:hover, ul.sidebar-menu li a.active:hover{
+    color: #FE5722;
+    background: #062E48;
 }
-
-.congratulation-body h1 {
-    text-transform: uppercase;
-    font-size: 45px;
-    font-weight: 600;
-    margin-top: 70px;
-    color: #2B9EF1;
+ul.sidebar-menu li a:hover span{
+    left: 75px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in;
 }
-
-.congratulation-body p {
-    color: #000;
-    font-size: 25px;
-    line-height: 33px;
-}
-
-
-/* Breadcrumb area start */
-
-.breadcrumb-area-start h5 {
-    font-size: 14px;
-    color: #181818;
-    margin-bottom: 3px;
-}
-
-.breadcrumb-area-start p,
-.breadcrumb-area-start p>span {
-    font-size: 12px;
-    font-weight: 500;
-    color: #5271FF;
-}
-
-.breadcrumb-area-start p>span {
-    color: #000;
-}
-
-
-/* Login page */
-
-.bsuite-login-area-start {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-
-.bsuite-login-form-area {
-    width: 60%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 2px 4px 44px -21px #737373;
-}
-
-.bsuite-login-context {
-    width: 40%;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-form.bsuite-login-form {
-    width: 60%;
-    padding: 65px;
-}
-
-.bsuite-login-area-start:after {
+ul.sidebar-menu li a>span {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 85px;
+    z-index: 1;
+    background: #083b5c;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 8px 13px;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+}
+ul.sidebar-menu li a>span:after {
+    position: absolute;
+    left: -4px;
+    top: 35%;
     content: '';
-    background: #5270ff;
-    width: 43%;
-    height: 100%;
+    background: #083b5c;
+    width: 10px;
+    height: 10px;
     z-index: -1;
+    transform: rotate(45deg);
+}
+ul.sidebar-menu li a i {
+    line-height: 0;
+}
+.bsuite-top-bar-area-start {
+    background: #072336;
 }
 
-.bsuite-login-context h4 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 44px;
-}
-
-form.bsuite-login-form h4 {
-    margin-bottom: 25px;
-    margin-top: 24px;
-    color: #5270FF;
-    text-transform: uppercase;
-}
-
-/* Setting page */
-
-.bsuite-setting-content-area {
-    min-height: 71vh;
-    max-height: 71vh;
-    overflow-y: auto;
-}
-
-.setting-menu-area {
-    background: #5271FF;
-    min-height: 71vh;
-}
-
-.setting-menu-area h6 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 19px 12px;
-}
-
-.setting-menu-area ul li{
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    padding: 0;
-    border-top: 1px solid #758dff;
-}
-.setting-menu-area ul li a {
+.bsuite-menu-hide-icon button>i {
     color: #fff;
 }
-.setting-menu-area ul {
-    padding: 0;
-}
-.nav {
-    display: block;
-}
-.setting-menu-area ul li >a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 12px!important;
-}
-.setting-menu-area ul li >a.active {
-    background: #031c2d;
-}
+
 /*Main area*/
 
 .space-grow .bsuite-sidebar-area-start {
@@ -848,11 +296,10 @@ form.bsuite-login-form h4 {
 }
 
 .bsuite-main-area-start {
-    margin-left: 240px;
+    margin-left: 76px;
     flex: 1;
     min-height: 100vh;
     overflow-x: hidden;
-    transition: all 0.5s ease-in-out;
 }
 
 main.bsuite-main-content {
@@ -869,8 +316,6 @@ main.bsuite-main-content {
     padding: 6px 10px;
     border-radius: 4px;
     margin-left: 10px;
-    -webkit-transition: background 0.1s linear;
-    transition: background 0.1s linear;
 }
 #toggleDropify:hover {
     background: #EEE;
