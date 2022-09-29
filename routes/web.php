@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace'=> 'Backend', 'prefix'=>'admin', 'as'=>'admin.'], function(){
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('events', [DashboardController::class, 'events'])->name('event');
 });
 
 

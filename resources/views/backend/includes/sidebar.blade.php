@@ -11,7 +11,7 @@
     <ul class="sidebar-menu">
         <li><a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><i class="fal fa-home"></i> <span>Home</span></a></li>
         <li>
-            <a href=""><i class="fal fa-calendar"></i> <span>Events</span></a>
+            <a href="{{ route('admin.event') }}" class="{{ request()->routeIs('admin.event') ? 'active' : '' }}"><i class="fal fa-calendar"></i> <span>Events</span></a>
         </li>
         <li>
             <a href=""><i class="fal fa-layer-group"></i> <span>Groups</span></a>

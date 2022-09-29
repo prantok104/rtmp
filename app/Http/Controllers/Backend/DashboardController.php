@@ -14,4 +14,8 @@ class DashboardController extends Controller
     protected function index(){
         return view("{$this->folder}index");
     }
+
+    public function events(){
+        return view("{$this->folder}index");
+    }
 }
