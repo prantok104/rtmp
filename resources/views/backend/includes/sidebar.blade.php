@@ -17,7 +17,7 @@
             <a href=""><i class="fal fa-layer-group"></i> <span>Groups</span></a>
         </li>
         <li>
-            <a href=""><i class="fal fa-bullhorn"></i> <span>Channels</span></a>
+            <a href="{{ route('admin.channel') }}" class="{{ request()->routeIs('admin.channel') ? 'active' : '' }}"><i class="fal fa-bullhorn"></i> <span>Channels</span></a>
         </li>
         <li>
             <a href=""><i class="fal fa-microphone"></i> <span>Records</span></a>

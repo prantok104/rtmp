@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\ChannelsController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\EventsController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace'=> 'Backend', 'prefix'=>'admin', 'as'=>'admin.'], function(){
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('events', [EventsController::class, 'index'])->name('event');
+    Route::get('channels', [ChannelsController::class, 'index'])->name('channel');
 });
 
 Route::get('/', function(){
