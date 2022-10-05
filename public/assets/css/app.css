@@ -192,6 +192,7 @@ form select.form-control {
     top: 0;
     height: 100vh;
     padding: 10px;
+    z-index: 99;
 }
 .bsuite-logo-area a {
     width: 50px;
@@ -433,8 +434,8 @@ main.bsuite-main-content {
     object-fit: cover;
     background: #144668;
 }
-}
-.all-channels-area-start {
+.all-channels-area-start, .all-groups-area-start {
+    column-count: 3;
     gap: 15px;
 }
 
@@ -457,9 +458,6 @@ main.bsuite-main-content {
 .channel-banner {
     position: relative;
 }
-.all-channels-area-start {
-    column-count: 3;
-}
 .channel-banner i {
     position: absolute;
     right: 5px;
@@ -477,4 +475,29 @@ main.bsuite-main-content {
 .custom-control-input:checked~.custom-control-label::before {
     border-color: #FE5722;
     background-color: #FE5722;
+}
+.group-content p {
+    font-size: 14px;
+}
+.group-content p {
+    font-size: 14px;
+}
+
+.alphabet {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fe5722;
+}
+
+.alphabet span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.all-groups-area-start a{
+    color: #fff;
 }
