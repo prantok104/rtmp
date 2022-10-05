@@ -5,6 +5,17 @@
         <div class="col-md-12">
             <div class="breadcrump-area-start d-flex justify-content-between align-items-center">
                 <h4>Channels (15)</h4>
+                <form action="" class="d-flex align-items-center gap-3">
+                    <input type="text" name="channel-name" placeholder="Search" class="form-control mr-2" style="width: 320px">
+                    <select name="category" id="" class="form-control" style="width: 320px">
+                        <option value="">---Select the category---</option>
+                        <option value="">Facebook</option>
+                        <option value="">Youtube</option>
+                        <option value="">Linkedin</option>
+                        <option value="">Tiktok</option>
+                        <option value="">Instagram</option>
+                    </select>
+                </form>
                 <a href="#" class="btn btn-primary btn-xl"><i class="fal fa-plus-circle "></i> Add New Channel</a>
             </div>
 

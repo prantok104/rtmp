@@ -474,3 +474,7 @@ main.bsuite-main-content {
     align-items: end;
     justify-content: center;
 }
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #FE5722;
+    background-color: #FE5722;
+}
