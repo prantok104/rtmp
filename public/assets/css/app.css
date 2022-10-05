@@ -380,3 +380,49 @@ main.bsuite-main-content {
 .no-more-data-found span{
     font-size: 17px;
 }
+.breadcrump-area-start {color: #fff;}
+
+.breadcrump-area-start h4 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.breadcrump-area-start a {
+    color: #fff;
+    font-size: 13px;
+}
+.all-events-area-start{
+    width: 80%;
+    margin: 0 auto;
+}
+.event-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.event-content p {
+    font-size: 13px;
+    margin-bottom: 23px;
+}
+
+.event-content p:last-child {
+    margin: 0;
+    margin-top: 23px;
+}
+
+.single-events-area {
+    padding: 17px;
+    background: #083451;
+    border-radius: 6px;
+    gap: 24px;
+    margin-bottom: 15px;
+}
+.event-banner img {
+    aspect-ratio: 16 / 9;
+    width: 220px;
+    border-radius: 3px;
+}
+.event-content p:last-child span {
+    font-size: 13px;
+    font-weight: 500
+}
