@@ -11,7 +11,7 @@
             {{-- Events area start --}}
             <div class="all-channels-area-start mt-4">
 
-                @for ($i = 0; $i <= 9; $i++)
+                @for ($i = 0; $i <= 11; $i++)
                     <div class="single-channel-area d-flex align-items-center justify-content-between text-white">
                         <div class="d-flex align-items-center">
                             <div class="channel-banner">
