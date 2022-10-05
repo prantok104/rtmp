@@ -26,7 +26,7 @@
                     <div class="single-channel-area d-flex align-items-center justify-content-between text-white">
                         <div class="d-flex align-items-center">
                             <div class="channel-banner">
-                                <img src="{{ asset('assets/images/event.png') }}" alt="" class="rounded-circle">
+                                <img src="https://source.unsplash.com/150x90" alt="" class="rounded-circle">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
 
@@ -34,6 +34,13 @@
                                 <h3>BadLockBack</h3>
                                 <p><span class="badge badge-soft-primary d-inline-block p-2">Facebook Page</span></p>
                             </div>
+                        </div>
+
+                        <div class="fans">
+                            <span class="d-block">Fans</span>
+                            <span class="badge badge-warning">@php
+                              echo  rand(1,1500);
+                            @endphp</span>
                         </div>
 
                         <div class="event-action d-flex flex-column justify-content-between align-items-center">

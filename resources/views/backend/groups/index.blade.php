@@ -17,7 +17,7 @@
                     $colors = ['fe5722', '0069D9', 'C50707', '9C36B5', '74C0FC', '04AA6D', 'b5a005', 'FFB3BB'];
                 @endphp
                 @for ($i = 0; $i <= 11; $i++)
-                    <a href="">
+                    <a href="" class="d-block">
                         <div class="single-channel-area d-flex align-items-center justify-content-between text-white">
                             <div class="d-flex align-items-center">
                                 <div class="channel-banner">
@@ -33,7 +33,9 @@
                             </div>
 
                             <div class="event-action d-flex flex-column justify-content-between align-items-center">
-                                <span class="badge badge-warning d-inline-block mb-2">25</span>
+                                <span class="badge badge-warning d-inline-block mb-2">@php
+                                    echo rand(1, 100);
+                                @endphp</span>
                                 <a href="javascript:void(0)" class="btn btn-sm text-white"><i class="fal fa-pencil"></i></a>
                                 <a href="javascript:void(0)" class="btn btn-sm text-white"><i class="fal fa-trash"></i></a>
                             </div>
