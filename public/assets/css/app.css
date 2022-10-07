@@ -94,7 +94,6 @@ span {
 
 form label {
     display: inline-block;
-    font-size: 13px;
     margin-bottom: 3px;
     margin-right: 10px;
 }
@@ -106,8 +105,10 @@ form select.form-control {
     display: block;
     border-radius: 2px;
     padding: 5px 10px;
-    height: 32px;
-    font-size: 12px
+    height: 40px;
+    font-size: 12px;
+    background: #083451;
+    border-color: #0a5181;
 }
 
 .form-group {
@@ -413,7 +414,7 @@ main.bsuite-main-content {
 
 .single-events-area {
     padding: 17px;
-    background: #083451;
+    background: #082c44;
     border-radius: 6px;
     gap: 24px;
     margin-bottom: 15px;
@@ -503,4 +504,86 @@ main.bsuite-main-content {
 }
 .single-channel-area:hover {
     background: #0d4366;
+}
+
+/* Login Page */
+.login-area-start {
+    background: #072336;
+    height: 100vh;
+}
+
+.login-area-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form-area {
+    padding: 25px;
+    background: #083451;
+    border-radius: 5px;
+}
+
+.login-form-area .form-group input {
+    display: block;
+    width: 290px;
+    color: #fff;
+}
+
+.animate-label {
+    height: 36px;
+    position: relative;
+}
+
+.animate-label label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    font-weight: 300;
+    font-size: 12px;
+    transition: 0.4s ease;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.form-group.animate-label label {
+    transform: translateY(-40%);
+    color: #fff;
+    padding: 4px 6px;
+}
+
+input:focus~label,
+input:not(:placeholder-shown).form-control:not(:focus)~label,
+textarea:focus~label,
+textarea:not(:placeholder-shown).form-control:not(:focus)~label {
+    top: 0;
+    left: 10px
+}
+
+.form-group input:focus~label,
+.form-group input:not(:focus)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:focus)~label {
+    background: #083451;
+}
+
+.login-header-content h3 {
+    font-size: 20px;
+    margin: 12px 0 24px 0;
+    text-transform: uppercase;
+}
+.login-btn{
+    width: 100%;
+}
+.login-header-content {
+    position: relative;
+}
+
+.login-header-content img {
+    position: absolute;
+    left: 38%;
+    top: -66px;
+    padding: 8px;
+    background: #083451;
 }

@@ -26,7 +26,7 @@
                     <div class="single-channel-area d-flex align-items-center justify-content-between text-white">
                         <div class="d-flex align-items-center">
                             <div class="channel-banner">
-                                <img src="https://source.unsplash.com/150x90" alt="" class="rounded-circle">
+                                <img src="https://loremflickr.com/g/150/120/dhaka?lock={{$i}}" alt="" class="rounded-circle">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
 

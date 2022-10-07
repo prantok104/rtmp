@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\Auth\LoginController;
 use App\Http\Controllers\Backend\ChannelsController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\EventsController;
@@ -22,6 +23,9 @@ Route::group(['namespace'=> 'Backend', 'prefix'=>'admin', 'as'=>'admin.'], funct
     Route::get('events', [EventsController::class, 'index'])->name('event');
     Route::get('channels', [ChannelsController::class, 'index'])->name('channel');
     Route::get('groups', [GroupsController::class, 'index'])->name('group');
+
+    /*----------------------Auth Route------------------------*/
+    Route::get('login', [LoginController::class, 'index'])->name('auth.login');
 });
 
 Route::get('/', function(){

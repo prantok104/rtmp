@@ -14,11 +14,11 @@
                 @for ($i = 0; $i <= 3; $i++)
                     <div class="single-events-area d-flex align-items-center justify-content-between text-white">
                         <div class="event-banner">
-                            <img src="{{ asset('assets/images/event.png') }}" alt="">
+                            <img src="https://loremflickr.com/g/350/220/dhaka?lock={{$i}}" alt="">
                         </div>
 
                         <div class="event-content">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nihil.</h3>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam.</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum temporibus incidunt sit quae.
                                 Est deleniti voluptatem id dignissimos nesciunt eligendi.</p>
                             <p><span class="badge text-warning font-light mr-3"><i class="fal fa-hourglass"></i> Category</span> <span><i
