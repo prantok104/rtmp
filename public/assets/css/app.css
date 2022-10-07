@@ -112,7 +112,7 @@ form select.form-control {
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 ::placeholder {
@@ -586,4 +586,56 @@ textarea:not(:placeholder-shown).form-control:not(:focus)~label {
     top: -66px;
     padding: 8px;
     background: #083451;
+}
+.strike {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.strike span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background: #083451;
+    padding: 0px 15px;
+}
+
+.strike:after {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 100%;
+    height: 1px;
+    background: #0a5181;
+    content: '';
+    z-index: -1;
+}
+.social-login {
+    display: flex;
+    flex-flow: column;
+}
+
+.social-login a {
+    margin-top: 9px;
+    background: #0069D9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.social-login a i {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #0069D9;
+    font-size: 20px;
 }

@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.png') }}" />
     {{-- Boostrap css --}}
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap/bootstrap.min.css') }}">
+    {{-- Fontawesome css --}}
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
     {{-- App css --}}
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 </head>
@@ -24,7 +26,7 @@
                         <div class="login-form-area">
                             <div class="login-header-content text-center">
                                 <img src="{{ asset('assets/images/logo/logo.png') }}" alt="" width="65" class="rounded-circle">
-                                <h3 class="text-white">Login</h3>
+                                <h3 class="text-white">Sign In</h3>
                             </div>
                             <form action="" method="post">
                                 <div class="form-group animate-label">
@@ -38,7 +40,7 @@
                                         </span>
                                     @enderror
                                 </div>
-                                <div class="form-group animate-label  mt-4">
+                                <div class="form-group animate-label">
                                     <input type="password" name="password" id="password" placeholder=" "
                                         class="form-control @error('password') is-invalid @enderror" autocomplete="off">
                                     <label for="password">Password <span class="text-danger">*</span></label>
@@ -48,8 +50,16 @@
                                         </span>
                                     @enderror
                                 </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary login-btn">LOGIN</button>
+                                <div>
+                                    <button type="submit" class="btn btn-primary login-btn">SIGN IN</button>
+                                </div>
+                                <div class="strike mt-3">
+                                    <span>OR</span>
+                                </div>
+
+                                <div class="social-login">
+                                    <a href="#"><i class="fab fa-facebook-f"></i> Sign in with Facebook</a>
+                                    <a href="#" style="background: #FF5722"><i class="fab fa-google" style="color: #FF5722"></i> Sign in with Google</a>
                                 </div>
                             </form>
                         </div>
