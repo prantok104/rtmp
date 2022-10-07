@@ -29,6 +29,7 @@
                                 <h3 class="text-white">Sign In</h3>
                             </div>
                             <form action="" method="post">
+                                @csrf
                                 <div class="form-group animate-label">
                                     <input type="email" name="email" id="email"
                                         class="form-control mt-2  @error('email') is-invalid @enderror" placeholder=" "

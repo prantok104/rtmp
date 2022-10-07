@@ -98,21 +98,21 @@ form label {
     margin-right: 10px;
 }
 
-form input[type="text"].form-control,
-form input[type="email"].form-control,
-form input[type="password"].form-control,
-form select.form-control {
+form input[type="text"].form-control,form .form-group.animate-label textarea.form-control, form input[type="email"].form-control, form input[type="password"].form-control, form select.form-control {
     display: block;
     border-radius: 2px;
     padding: 5px 10px;
     height: 40px;
     font-size: 12px;
-    background: #083451;
+    background: #fff;
     border-color: #0a5181;
 }
 
 .form-group {
     margin-bottom: 1.5rem;
+}
+form .form-group.animate-label input.form-control, form .form-group.animate-label textarea.form-control{
+    background: #083451
 }
 
 ::placeholder {
@@ -485,8 +485,8 @@ main.bsuite-main-content {
 }
 
 .alphabet {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,7 +495,7 @@ main.bsuite-main-content {
 }
 
 .alphabet span {
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -532,13 +532,12 @@ main.bsuite-main-content {
 }
 
 .animate-label {
-    height: 36px;
     position: relative;
 }
 
 .animate-label label {
     position: absolute;
-    top: 50%;
+    top:20px;
     left: 16px;
     font-weight: 300;
     font-size: 12px;
@@ -548,7 +547,7 @@ main.bsuite-main-content {
 }
 
 .form-group.animate-label label {
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     color: #fff;
     padding: 4px 6px;
 }
@@ -638,4 +637,11 @@ textarea:not(:placeholder-shown).form-control:not(:focus)~label {
     background: #fff;
     color: #0069D9;
     font-size: 20px;
+}
+a.btn.btn-sm:hover {
+    background: #08324e;
+}
+form .form-group.animate-label textarea.form-control{
+    height:auto;
+    color: #fff;
 }

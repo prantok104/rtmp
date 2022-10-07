@@ -14,7 +14,7 @@
             <a href="{{ route('admin.event') }}" class="{{ request()->routeIs('admin.event') ? 'active' : '' }}"><i class="fal fa-calendar"></i> <span>Events</span></a>
         </li>
         <li>
-            <a href="{{ route('admin.group') }}" class="{{ request()->routeIs('admin.group') ? 'active' : '' }}"><i class="fal fa-layer-group"></i> <span>Groups</span></a>
+            <a href="{{ route('admin.groups.index') }}" class="{{ request()->routeIs('admin.groups.*') ? 'active' : '' }}"><i class="fal fa-layer-group"></i> <span>Groups</span></a>
         </li>
         <li>
             <a href="{{ route('admin.channel') }}" class="{{ request()->routeIs('admin.channel') ? 'active' : '' }}"><i class="fal fa-bullhorn"></i> <span>Channels</span></a>

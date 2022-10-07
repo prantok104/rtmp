@@ -4,11 +4,11 @@
     <div class="d-flex justify-content-between">
         <div class="col-md-12">
             <div class="breadcrump-area-start d-flex justify-content-between align-items-center">
-                <h4>Groups (15)</h4>
+                <h4>Groups (12)</h4>
                 <form action="" class="d-flex align-items-center gap-3">
                     <input type="text" name="group-name" placeholder="Search" class="form-control mr-2" style="width: 320px">
                 </form>
-                <a href="#" class="btn btn-primary btn-xl"><i class="fal fa-plus-circle "></i> Add New Group</a>
+                <a href="{{ route('admin.groups.create') }}" class="btn btn-primary btn-xl"><i class="fal fa-plus-circle "></i> Add New Group</a>
             </div>
 
             {{-- Events area start --}}
@@ -27,8 +27,8 @@
                                 </div>
 
                                 <div class="channel-content group-content ml-3">
-                                    <h3>BadLockBack</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, eum.</p>
+                                    <h3>{{ \Str::random(2) }}BadLockBack</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor.</p>
                                 </div>
                             </div>
 
