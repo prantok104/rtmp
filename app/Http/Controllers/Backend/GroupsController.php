@@ -88,4 +88,11 @@ class GroupsController extends Controller
     {
         //
     }
+
+
+    // Add channels by group id
+
+    public function add_channels_by_group($id){
+        return view("{$this->folder}add_channels");
+    }
 }

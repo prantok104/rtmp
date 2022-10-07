@@ -23,6 +23,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'], function(){
     Route::get('events', [EventsController::class, 'index'])->name('event');
     Route::get('channels', [ChannelsController::class, 'index'])->name('channel');
     Route::resource('groups', GroupsController::class);
+    Route::get('groups/add-channels/{id}', [GroupsController::class, 'add_channels_by_group'])->name('groups.add.channel');
 
     /*----------------------Auth Route------------------------*/
     Route::get('login', [LoginController::class, 'index'])->name('auth.login');

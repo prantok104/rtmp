@@ -17,7 +17,7 @@
                     $colors = ['fe5722', '0069D9', 'C50707', '9C36B5', '74C0FC', '04AA6D', 'b5a005', 'FFB3BB'];
                 @endphp
                 @for ($i = 0; $i <= 11; $i++)
-                    <a href="" class="d-block">
+                    <a href="{{ route('admin.groups.add.channel', 10) }}" class="d-block">
                         <div class="single-channel-area d-flex align-items-center justify-content-between text-white">
                             <div class="d-flex align-items-center">
                                 <div class="channel-banner">
