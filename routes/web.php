@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'admin', 'as'=>'admin.'], function(){
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('events', [EventsController::class, 'index'])->name('event');
+    Route::get('events/create', [EventsController::class, 'create'])->name('event.create');
     Route::get('channels', [ChannelsController::class, 'index'])->name('channel');
     Route::resource('groups', GroupsController::class);
     Route::get('groups/add-channels/{id}', [GroupsController::class, 'add_channels_by_group'])->name('groups.add.channel');

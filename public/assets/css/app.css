@@ -109,7 +109,7 @@ form input[type="text"].form-control,form .form-group.animate-label textarea.for
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 form .form-group.animate-label input.form-control, form .form-group.animate-label textarea.form-control{
     background: #083451
@@ -644,4 +644,16 @@ a.btn.btn-sm:hover {
 form .form-group.animate-label textarea.form-control{
     height:auto;
     color: #fff;
+}
+.df-dark, .df-dark:focus {
+    background: transparent!important;
+    color: #fff;
+    border-color: #0a5181;
+}
+.dark-dropify .dropify-wrapper:hover{
+    background-image: linear-gradient(-45deg,#072336 25%,transparent 25%,transparent 50%,#072336 50%,#072336 75%,transparent 75%,transparent);
+}
+.dark-dropify .dropify-wrapper{
+    background-color: transparent;
+    border-color: #0a5181!important;
 }

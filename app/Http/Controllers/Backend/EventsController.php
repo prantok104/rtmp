@@ -30,7 +30,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        //
+        return view("{$this->folder}create");
     }
 
     /**

@@ -23,6 +23,12 @@ $(document).ready(function(){
         clearButton: true
     });
 
+    $('.time-picker').bootstrapMaterialDatePicker({
+        time: true,
+        date:false,
+        clearButton: true
+    });
+
     // Droify js
     $('.dropify').dropify({
         messages: {
