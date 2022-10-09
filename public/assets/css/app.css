@@ -657,3 +657,27 @@ form .form-group.animate-label textarea.form-control{
     background-color: transparent;
     border-color: #0a5181!important;
 }
+.event-single-page.single-channel-area{
+    margin-bottom: 4px;
+    padding: 4px 15px;
+}
+
+.screen-area {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+.event-single-content {
+    color: #fff;
+    padding: 15px 0;
+}
+
+.event-single-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.event-single-content p {
+    font-size: 14px;
+}

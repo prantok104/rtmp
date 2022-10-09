@@ -11,14 +11,14 @@
             {{-- Events area start --}}
             <div class="all-events-area-start mt-4">
 
-                @for ($i = 0; $i <= 3; $i++)
+                @for ($i = 0; $i <= 4; $i++)
                     <div class="single-events-area d-flex align-items-center justify-content-between text-white">
                         <div class="event-banner">
-                            <img src="https://loremflickr.com/g/350/220/dhaka?lock={{$i}}" alt="">
+                            <a href="{{route('admin.event.show',10)}}"><img src="https://loremflickr.com/g/350/220/dhaka?lock={{$i}}" alt=""></a>
                         </div>
 
                         <div class="event-content">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam.</h3>
+                           <a href="" class="text-white"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam.</h3></a>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum temporibus incidunt sit quae.
                                 Est deleniti voluptatem id dignissimos nesciunt eligendi.</p>
                             <p><span class="badge text-warning font-light mr-3"><i class="fal fa-hourglass"></i> Category</span> <span><i
