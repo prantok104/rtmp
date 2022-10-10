@@ -72,10 +72,20 @@
                     </div>
                 </div>
                 <div class="event-small-screen">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <button type="submit" class="btn btn-primary login-btn mr-2">Schedule</button>
-                        <button type="submit" class="btn btn-danger login-btn">Live Now</button>
-                    </div>
+                    <form action="" method="post">
+                        <div class="form-group animate-label    ">
+                            <input type="text" name="rtmp_link" id="rtmp_link" class="form-control df-dark" placeholder=" ">
+                            <label for="rtmp_link" style="background: #072336">RTMP url : </label>
+                        </div>
+                        <div class="form-group animate-label    ">
+                            <input type="text" name="stream_key" id="stream_key" class="form-control df-dark" placeholder=" ">
+                            <label for="stream_key" style="background: #072336">Stream Key : </label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="submit" class="btn btn-primary login-btn mr-2">Schedule</button>
+                            <button type="submit" class="btn btn-danger login-btn">Live Now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             {{-- Event right side area end --}}
