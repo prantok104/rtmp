@@ -357,13 +357,9 @@ main.bsuite-main-content {
 .dashboard-content-left p>a {
     font-size: 13px;
     padding: 10px 13px;
-    background: #0014ff;
     border-radius: 3px;
     color: #fff;
     text-transform: uppercase;
-}
-.dashboard-content-left p>a:hover{
-    background: #0717c5;
 }
 
 .dashboard-content-left p {

@@ -11,10 +11,10 @@
     <ul class="sidebar-menu">
         <li><a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><i class="fal fa-home"></i> <span>Home</span></a></li>
         <li>
-            <a href="{{ route('admin.event') }}" class="{{ request()->routeIs('admin.event') ? 'active' : '' }}"><i class="fal fa-calendar"></i> <span>Events</span></a>
+            <a href="{{ route('admin.event') }}" class="{{ request()->routeIs('admin.event*') ? 'active' : '' }}"><i class="fal fa-calendar"></i> <span>Events</span></a>
         </li>
         <li>
-            <a href="{{ route('admin.groups.index') }}" class="{{ request()->routeIs('admin.groups.*') ? 'active' : '' }}"><i class="fal fa-layer-group"></i> <span>Groups</span></a>
+            <a href="{{ route('admin.groups.index') }}" class="{{ request()->routeIs('admin.groups*') ? 'active' : '' }}"><i class="fal fa-layer-group"></i> <span>Groups</span></a>
         </li>
         <li>
             <a href="{{ route('admin.channel') }}" class="{{ request()->routeIs('admin.channel') ? 'active' : '' }}"><i class="fal fa-bullhorn"></i> <span>Channels</span></a>
