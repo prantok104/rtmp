@@ -2,37 +2,10 @@
 @section('title', 'Add Channels')
 @section('main')
 
-    {{-- Event Big screen area start --}}
-    <div class="row pl-3 pr-3">
-        <div class="col-md-7">
-            <div class="event-big-screen">
-                <div class="screen-area">
-
-                </div>
-                <div class="event-single-content">
-                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicin.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim deleniti. Autem ipsum
-                        sint quos expedita, quia aperiam quod fugit! Odit obcaecati, libero voluptatum consequatur
-                        sed animi magnam nam nisi?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-5">
-            <div class="event-small-screen">
-                <div class="d-flex align-items-center justify-content-between">
-                    <button type="submit" class="btn btn-primary login-btn mr-2">Schedule</button>
-                    <button type="submit" class="btn btn-danger login-btn">Live Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- Event Big screen area end --}}
-
     <div class="d-flex justify-content-between">
-        <div class="col-md-12">
+        <div class="col-md-12 d-flex justify-content-between">
             {{-- Events area start --}}
-            <div class="all-channels-area-start mt-4" style="column-count: 1">
+            <div class="all-channels-area-start mr-2" style="column-count: 1; width: 68%">
 
                 @for ($i = 0; $i <= 19; $i++)
                     <div
@@ -46,26 +19,25 @@
 
                             <div class="channel-content ml-3 d-flex align-items-center  gap-2">
                                 <h3 class="m-0 mr-3">{{ \Str::random(3) }}BadLockBack</h3>
-                                <p><span class="badge badge-soft-primary d-inline-block p-2">Facebook Page</span></p>
                             </div>
 
 
                             <div class="fans d-flex align-items-center ml-3 ">
-                                <span class="d-block mr-2">Fans: </span>
+                                <span class="d-block mr-2"><i class="fal fa-users"></i> </span>
                                 <span class="badge badge-warning">@php
                                     echo rand(1, 1500);
                                 @endphp</span>
                             </div>
 
                             <div class="fans d-flex align-items-center ml-3 ">
-                                <span class="d-block mr-2">Likes: </span>
+                                <span class="d-block mr-2"><i class="fal fa-thumbs-up"></i> </span>
                                 <span class="badge badge-primary">@php
                                     echo rand(1, 1500);
                                 @endphp</span>
                             </div>
 
                             <div class="fans d-flex align-items-center ml-3 ">
-                                <span class="d-block mr-2">Comments: </span>
+                                <span class="d-block mr-2"><i class="fal fa-comments"></i> </span>
                                 <span class="badge badge-success">@php
                                     echo rand(1, 1500);
                                 @endphp</span>
@@ -86,6 +58,27 @@
                 @endfor
             </div>
             {{-- Events area end --}}
+
+
+
+            {{-- Event right side area start --}}
+            <div class="event-right-side-area " style="width: 30%">
+                <div class="event-big-screen">
+                    <div class="screen-area">
+
+                    </div>
+                    <div class="event-single-content">
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicin.</h2>
+                    </div>
+                </div>
+                <div class="event-small-screen">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button type="submit" class="btn btn-primary login-btn mr-2">Schedule</button>
+                        <button type="submit" class="btn btn-danger login-btn">Live Now</button>
+                    </div>
+                </div>
+            </div>
+            {{-- Event right side area end --}}
         </div>
     </div>
 @endsection
