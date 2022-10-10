@@ -6,8 +6,8 @@
         <span>Welcome to DStream</span>
         <strong>Let's Play with <span>DHAKALIVE</span> Stream</strong>
         <p>
-            <a href=""><i class="fal fa-plus-circle"></i> Events</a>
-            <a href=""><i class="fal fa-plus-circle"></i> Groups</a>
+            <a href="{{route('admin.event.create')}}"><i class="fal fa-plus-circle"></i> Events</a>
+            <a href="{{route('admin.groups.create')}}"><i class="fal fa-plus-circle"></i> Groups</a>
             <a href=""><i class="fal fa-plus-circle"></i> Channels</a>
         </p>
     </div>

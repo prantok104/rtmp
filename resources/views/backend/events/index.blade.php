@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <div class="breadcrump-area-start d-flex justify-content-between align-items-center">
                 <h4>Events (5)</h4>
-                <a href="#" class="btn btn-primary btn-xl"><i class="fal fa-plus-circle "></i> Add New Event</a>
+                <a href="{{route('admin.event.create')}}" class="btn btn-primary btn-xl"><i class="fal fa-plus-circle "></i> Add New Event</a>
             </div>
 
             {{-- Events area start --}}
@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="event-content">
-                           <a href="" class="text-white"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam.</h3></a>
+                           <a href="{{route('admin.event.show',10)}}" class="text-white"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam.</h3></a>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum temporibus incidunt sit quae.
                                 Est deleniti voluptatem id dignissimos nesciunt eligendi.</p>
                             <p><span class="badge text-warning font-light mr-3"><i class="fal fa-hourglass"></i> Category</span> <span><i
