@@ -13,7 +13,7 @@
     </div>
     <div class="dashboard-right-content">
         <div class="no-more-data-found">
-            <span>No More Events or Schedules Found :( :(</span>
+            <span>No More Events or Schedules Found :( :( Something is nothing than better</span>
         </div>
     </div>
 </div>
